@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.containerHomeSection {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    margin-top: -20%;
+}
+
+.rightContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightContainer .gokuImg {
+    width: 370px;
+}
+
+.gokuImg {
+    animation: MoveUpDown 5s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 50px;
+    }
+}
+
+.presentation {
+    font-size: 16px;
+    color: #F65A1F;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 45px;
+    color: #3D4351;
+    font-weight: bold;
+}
+
+.dev {
+    font-size: 35px;
+    color: #3D4351;
+    font-weight: bold;
+}
+
+.fullstack {
+    font-size: 35px;
+    color: #F65A1F;
+    font-weight: bold;
+}
+
+.textPresentation {
+    margin-top: 22px;
+}
+
+.buttonLink {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #FFF;
+    color: #F65A1F;
+    border: 1px solid #F65A1F;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 25px;
+    /* padding: 10px 30px; 10 px superior 30px lateral */
+}
+
+.buttonLink:hover {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #F65A1F;
+    color: #FFF;
+    border: 1px solid #F65A1F;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 25px;
+    transition: all ease .4s;
+    /* padding: 10px 30px; 10 px superior 30px lateral */
+}
+
+
+/* AboutMe section  */
+
+.brenoFoto {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.containerAboutMe {
+    background-color: #CCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftAboutMe {}
+
+.rightAboutMe {
+    flex: 1;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .containerAboutMe {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,27 @@
+body {
+    background-color: red;
+}
+
+.imgLogo {
+    height: 40px;
+}
+
+.linksnavbarMenu {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(33, 32, 32);
+    text-decoration: none;
+    border-bottom: 2px solid #FFF;
+}
+
+.linksnavbarMenu:hover {
+    color: #f65a1f;
+    border-bottom: 2px solid #f65a1f;
+    transition: all ease .4s;
+}
+
+.navbarattributes {
+    height: 50px;
+}
